@@ -16,9 +16,9 @@ body {
     }
     /* Oyun alanı: 1080x1350 piksel, 8 kart için 4 sütun ve 2 satır */
     #game {
-        max-width: 1300px;
+        max-width: 900px;
       width: 100%;
-      height: 800px;
+      height: 600px;
       margin: 20px auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -26,7 +26,7 @@ body {
       gap: 10px;
     }
     .card {
-  background-color: #f0f0f0;
+  background-color: #b4b4b4;
   border-radius: 16px; /* Daha yuvarlak köşeler */
   cursor: pointer;
   position: relative;
@@ -60,13 +60,13 @@ body {
     
     .card-front img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   border-radius: 16px; /* Resim de yuvarlak köşelere uysun */
   background-color: #b4b4b4;
 }
 .card-back {
-  background-color: white;
+  background-color: b4b4b4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,8 +75,7 @@ body {
 
 .card-back img {
     width: 100%;
-    height: 100%; /* Logonun kartın %50'sini kaplaması */
-  height: auto; /* Oranları koruyarak boyutlandırma */
+
   border-radius: 16px; /* Resim de yuvarlak köşelere uysun */
 }
     #message {
